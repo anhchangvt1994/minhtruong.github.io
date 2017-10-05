@@ -2,7 +2,7 @@ $(function($) {
     $.fn.mtLbox = function(opt) {
         var itemID = $(this)[0].id,
             itemClass = $(this)[0].className;
-            console.log(itemID);
+        console.log(itemID);
         var curObj = itemID != " " ? "#" + itemID : itemClass.split(" ").length == 0 ? "." + itemClass : "." + itemClass.split(" ")[0],
             listImg = $($(this).find("img"));        
         console.log(curObj);
